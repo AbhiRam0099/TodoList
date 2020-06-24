@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-abhi:Test123@cluster0-pnoeg.gcp.mongodb.net/todolistDB?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://admin-name:password@cluster0-pnoeg.gcp.mongodb.net/todolistDB?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology: true});
 const itemsSchema={
   name:String
 };
